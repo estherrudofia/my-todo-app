@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow p-3 mb-5 bg-dark rounded">
+                <div class="container-fluid">
+                  <a class="navbar-brand me-5" href="#">My Task App</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse ms-5" id="navbarText">
+                      <span class="navbar-text navText ms-5 me-5">
+                          Add your daily task to the schedule...
+                      </span>
+                      <div class="input-group headSearch">
+                        <input type="text" class="form-control " placeholder="Search"  aria-describedby="basic-addon2">
+                        <button class="input-group-text btn-primary" id="basic-addon2">Search</button>
+                      </div>
+                        <!-- <form class="input-group ms-5">
+                            <input class="form-control headSearch ms-5 me-2" type="search" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
+                            <button class="btn btn-outline-primary" type="submit" id="basic-addon2">Search</button>
+                        </form> -->
+                  </div>
+                </div>
+              </nav>
+        </header>
+
+        <section class=" mb-5">
+            <div class=" card">
+                <div class="input-group">
+                    <input type="text" class="form-control add" placeholder="Your daily task"  aria-describedby="basic-addon2">
+                    <button class="input-group-text addTask btn-primary" id="basic-addon2">Add Task</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <header>
+                <h3>My Todo List</h3>
+            </header>
+            <div class="select">
+              <select name="todos" class="filter-todo">
+                  <option value="all">All</option>
+                  <option value="completed">Completed</option>
+                  <option value="uncompleted">Uncompleted</option>
+              </select>
+            </div>
+            <p></p>
+            <ul>
+                <div class="input-group allTask mb-3">
+                   <ul class="todo"></ul>   
+                </div>
+            </ul>
+        </section>
+
+        <section>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+        </section>
+
+    </div>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
